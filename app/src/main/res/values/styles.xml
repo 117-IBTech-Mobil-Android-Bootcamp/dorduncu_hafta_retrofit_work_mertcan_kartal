@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HelloBold" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/login_welcome_text</item>
+        <item name="android:textSize">@dimen/login_text_large</item>
+        <item name="fontFamily">@font/sfprodisplay_bold</item>
+    </style>
+
+    <style name="HelloRegular" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/login_welcome_text</item>
+        <item name="android:textSize">@dimen/login_text_small</item>
+        <item name="fontFamily">@font/sfprodisplay_regular</item>
+    </style>
+
+    <style name="EditText" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/edit_text_hint_color</item>
+        <item name="android:textSize">@dimen/edittext</item>
+        <item name="fontFamily">@font/sfprodisplay_regular</item>
+    </style>
+
+    <style name="LoginText" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/login_text_button</item>
+        <item name="android:textSize">@dimen/logintext</item>
+        <item name="fontFamily">@font/sfprodisplay_bold</item>
+    </style>
+
+    <style name="HomeFragmentTitle" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/home_fragment_big_title</item>
+        <item name="fontFamily">@font/sfprodisplay_bold</item>
+    </style>
+
+    <style name="recyclerRowTask" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/rowtask</item>
+        <item name="android:textSize">@dimen/rowstask</item>
+        <item name="fontFamily">@font/sfprotext_regular</item>
+    </style>
+
+</resources>

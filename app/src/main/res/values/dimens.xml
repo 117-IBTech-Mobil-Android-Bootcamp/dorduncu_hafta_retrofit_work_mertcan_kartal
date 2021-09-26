@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margin  -->
+    <dimen name="login_logo_margin_top">105dp</dimen>
+
+    <dimen name="login_hello_margin_top">125dp</dimen>
+    <dimen name="login_hello_margin_start">64dp</dimen>
+    <dimen name="login_please_margin_top">12dp</dimen>
+    <dimen name="login_margin_bottom">54dp</dimen>
+
+    <dimen name="edittext_height">64dp</dimen>
+    <dimen name="edittext_margin_horizontal">36dp</dimen>
+    <dimen name="edittext_margin_top">32dp</dimen>
+    <dimen name="edittext_password_margin_top">15dp</dimen>
+    <dimen name="edittext_padding_start">32dp</dimen>
+
+    <dimen name="home_fragment_title_margin">64dp</dimen>
+    <dimen name="home_fragment_more_margin_end">16dp</dimen>
+    <dimen name="home_fragment_more_margin_top">64dp</dimen>
+    <dimen name="home_fragment_rv_margin_top">32dp</dimen>
+
+    <dimen name="recycler_row_task_text_margin">16dp</dimen>
+    <dimen name="recycler_row_task_image_margin">16dp</dimen>
+    <dimen name="recycler_row_task_padding_top">16dp</dimen>
+
+    <dimen name="cardview_size">64dp</dimen>
+    <dimen name="cardview_margin_end">18dp</dimen>
+    <dimen name="cardview_margin_bottom">42dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="login_text_large">28sp</dimen>
+    <dimen name="login_text_small">18sp</dimen>
+    <dimen name="edittext">18sp</dimen>
+    <dimen name="logintext">18sp</dimen>
+    <dimen name="home_fragment_big_title">32sp</dimen>
+    <dimen name="rowstask">18sp</dimen>
+</resources>

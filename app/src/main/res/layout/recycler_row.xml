@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rambler.libs.swipe_layout.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipeRecycler"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:left_swipe_enabled="true"
+    app:right_swipe_enabled="false">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/recycler_row_task_padding_top">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/row_task_complete_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/recycler_row_task_image_margin"
+            android:src="@drawable/ic_blank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_task_text"
+            style="@style/recyclerRowTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/recycler_row_task_text_margin"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/row_task_complete_image"
+            app:layout_constraintStart_toEndOf="@id/row_task_complete_image"
+            app:layout_constraintTop_toTopOf="@id/row_task_complete_image"
+            android:text="Start making a presentation"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:background="#1A000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/row_task_text"
+            app:layout_constraintTop_toBottomOf="@id/row_task_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:gravity="right" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        app:bring_to_clamp="150dp"
+        app:clamp="self"
+        app:gravity="left"
+        app:sticky="none">
+
+        <FrameLayout
+            android:id="@+id/complete_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/delete_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_completed" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/delete_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/complete_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rubbish" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ru.rambler.libs.swipe_layout.SwipeLayout>
